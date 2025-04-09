@@ -1,25 +1,4 @@
-import pandas as pd
-import math
-import streamlit as st
 
-class Analyzer:
-    def __init__(self, code, name, tests_per_hour, cost, amortization, work_hours=8, work_days=22):
-        self.code = code
-        self.name = name
-        self.tests_per_hour = tests_per_hour
-        self.cost = cost
-        self.amortization = amortization
-        self.work_hours = work_hours
-        self.work_days = work_days
-        self.studies = []
-
-class Study:
-    def __init__(self, code, name, research_flow, error_rate, control_tests):
-        self.code = code
-        self.name = name
-        self.research_flow = research_flow
-        self.error_rate = error_rate
-        self.control_tests = control_tests
 
 class MedicalCostCalculator:
     def __init__(self):
